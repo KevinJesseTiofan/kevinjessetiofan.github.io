@@ -16,14 +16,18 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #2c3e50, #3498db); /* full-page gradient */
       color: white;
-      min-height: 100vh; /* fill full screen */
-      display: flex;
-      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 30px;
+      margin-bottom: 60px;
     }
 
     header img {
@@ -45,71 +49,66 @@
       color: #e0e0e0;
     }
 
-    nav {
-      margin-top: 20px;
-    }
-
-    nav a {
-      color: #f1f1f1;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: #ffd700;
-    }
-
     section {
-      max-width: 800px;
-      margin: 40px auto;
+      margin-bottom: 60px;
       padding: 20px;
       background: rgba(255, 255, 255, 0.1); /* transparent box */
       border-radius: 12px;
     }
 
+    section h2 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #ffd700;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      margin-top: auto;
       font-size: 0.9em;
       color: #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <!-- Photo slot -->
-    <img src="your-photo.jpg" alt="Your Photo">
-    <h1>Your Name</h1>
-    <p>A short tagline about what you do</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write something about yourself here.</p>
-  </section>
+    <header>
+      <!-- Photo slot -->
+      <img src="your-photo.jpg" alt="Your Photo">
+      <h1>Your Name</h1>
+      <p>A short tagline about what you do</p>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>List your projects here.</p>
-  </section>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Write something about yourself here — who you are, what you study, your interests, or anything you want visitors to know.
+      </p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project One</strong> — Short description.</li>
+        <li><strong>Project Two</strong> — Short description.</li>
+        <li><strong>Project Three</strong> — Short description.</li>
+      </ul>
+    </section>
 
-  <footer>
-    © 2025 Your Name. All rights reserved.
-  </footer>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" style="color:#ffd700;">yourusername</a></p>
+    </section>
+
+    <footer>
+      © 2025 Your Name. All rights reserved.
+    </footer>
+
+  </div>
 
 </body>
 </html>
